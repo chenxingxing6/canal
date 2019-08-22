@@ -53,6 +53,8 @@ vim conf/examples/instance.properties
 
 ![avatar](https://raw.githubusercontent.com/chenxingxing6/canal/master/mytest/img9.png)
 
+
+https://github.com/chenxingxing6/canal/blob/master/example/src/main/java/com/demo/my/MyTest.java
 ```java
 package com.example.canal;
 
