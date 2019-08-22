@@ -17,9 +17,9 @@ mysql本身支持主从的【master slave】，原理：master产生的binlog日
 - 业务 cache 刷新
 - 带业务逻辑的增量数据处理
 
-![avatar](http://baidu.com/pic/doge.png)  
-![avatar](http://baidu.com/pic/doge.png)  
-![avatar](http://baidu.com/pic/doge.png) 
+![avatar](https://raw.githubusercontent.com/chenxingxing6/canal/master/mytest/img1.png)  
+![avatar](https://raw.githubusercontent.com/chenxingxing6/canal/master/mytest/img2.png)  
+![avatar](https://raw.githubusercontent.com/chenxingxing6/canal/master/mytest/img3.png) 
 
 - 1.canal伪装成slave,向Master发送dump协议
 - 2.master收到dump请求，开始推送binary log给canal
@@ -28,3 +28,24 @@ mysql本身支持主从的【master slave】，原理：master产生的binlog日
 ---
 ## 二、安装canal [mac版本]
 下载：https://github.com/alibaba/canal/releases
+![avatar](https://raw.githubusercontent.com/chenxingxing6/canal/master/mytest/img4.png)
+
+##### 2.1解压
+![avatar](https://raw.githubusercontent.com/chenxingxing6/canal/master/mytest/img5.png)
+
+##### 2.2修改配置
+```html
+vim conf/examples/instance.properties
+#一定要注释掉下面这个参数，这样就会扫描全库 
+#canal.instance.defaultDatabaseName = test
+```
+![avatar](https://raw.githubusercontent.com/chenxingxing6/canal/master/mytest/img6.png)
+
+##### 2.3启动
+![avatar](https://raw.githubusercontent.com/chenxingxing6/canal/master/mytest/img4.png)
+
+---
+
+## 三、Java代码测试
+
+
