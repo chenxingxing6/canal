@@ -27,7 +27,8 @@ mysql本身支持主从的【master slave】，原理：master产生的binlog日
  
 ---
 ## 二、安装canal [mac版本]
-下载：https://github.com/alibaba/canal/releases
+下载：https://github.com/alibaba/canal/releases   
+
 ![avatar](https://raw.githubusercontent.com/chenxingxing6/canal/master/mytest/img4.png)
 
 ##### 2.1解压
